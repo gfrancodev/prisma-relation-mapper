@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "outDir": "./dist",
+    "baseUrl": ".",
+    "paths": {
+      "@prisma/utils": ["src/@prisma/utils"],
+      "@/*": ["src/*"]
+    }
+  },
+  "include": ["src/**/*.ts", "src/scripts/*.ts", "src/**/**/*.ts", "src/**/**/**/*.ts"],
+  "exclude": ["node_modules"]
+}

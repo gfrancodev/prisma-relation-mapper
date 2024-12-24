@@ -1,0 +1,35 @@
+{
+  "name": "prisma-relations-mapper",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "vitest --reporter=verbose",
+    "test:cov": "vitest --coverage",
+    "test:cov-ci": "vitest run --coverage.enabled --coverage.reporter=text-summary --coverage.reporter=clover --coverage.reporter=lcov",
+    "db:seed": "tsx src/scripts/db-seed.ts",
+    "db:generate": "prisma generate",
+    "db:migrate": "prisma migrate dev",
+    "db:push": "prisma db push",
+    "db:studio": "prisma studio",
+    "example:outer-join": "tsx src/examples/outer-join.ts",
+    "example:inner-join": "tsx src/examples/inner-join.ts",
+    "example:left-join": "tsx src/examples/left-join.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "@vitest/coverage-v8": "^2.1.8",
+    "tsconfig-paths": "^4.2.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2",
+    "vite-tsconfig-paths": "^5.1.4",
+    "vitest": "^2.1.8"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.1.0",
+    "prisma": "^6.1.0"
+  }
+}
